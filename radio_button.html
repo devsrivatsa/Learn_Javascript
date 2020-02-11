@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      function fn1(){
+        var rd1 = document.getElementById("rd1");
+        var rd2 = document.getElementById("rd2");
+        var rd3 = document.getElementById("rd3");
+
+        if(rd1.checked == true)
+          alert("Javascript is selected");
+        else if(rd2.checked == true)
+          alert("Java is selected");
+        else if(rd3.checked == true)
+          alert("Python is selected");
+        else
+          alert("No valid selection is made!")
+      }
+    </script>
+    <title></title>
+  </head>
+  <body>
+    <h2>Select any...</h2>
+    <br>
+    <input id="rd1" name = "grp1" type="radio" value="Javascript">Javascript</input><br>
+    <input id="rd2" name = "grp1" type="radio" value="Java">Java</input><br>
+    <input id="rd3" name = "grp1" type="radio" value="Python">Python</input><br>
+    <button id="btn" onclick="fn1()">click Me</button>
+
+  </body>
+</html>
