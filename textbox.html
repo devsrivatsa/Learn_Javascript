@@ -1,0 +1,29 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      function fn1(){
+        var user = document.getElementById("usr").value;
+        var pass = document.getElementById("pas").value;
+        if(user == pass){
+          alert(pass)
+        }
+        else{
+          alert("NONONO")
+        }
+      }
+    </script>
+    <title></title>
+  </head>
+  <body>
+    <h2>Please enter your username and password</h2>
+    <br>
+    <input id = usr placeholder="Enter Username">
+    <br>
+    <input id = pas placeholder="Enter Password" type = "password">
+    <br>
+    <button id = "btn" onclick = "fn1()">click here</button>
+
+  </body>
+</html>
